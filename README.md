@@ -1,6 +1,6 @@
 # Helm Chart Publisher
 
-Bash script used to publish [Helm](https://helm.sh) charts on the Helm charts repository (https://cetic.github.io/helm-charts) made by [@cetic](https://cetic.be).
+Bash script used to publish [Helm](https://helm.sh) charts releases on a central Git Repository accessible by Github Page.
 
 Steps of script:
 
@@ -20,7 +20,7 @@ helm repo update
 ### Variables
 
 * GITHUB_PAGES_REPO: name of the Helm charts repository (e.g. cetic/helm-charts).
-* HELM_CHART: name of the Helm chart to publish (e.g. nifi).
+* HELM_CHART: name of the Helm chart release to publish (e.g. nifi).
 * HELM_VERSION: version of the [Helm](https://helm.sh) client (e.g. 3.0.0).
 
 
