@@ -94,4 +94,5 @@ git config user.name CircleCI
 git add .
 git status
 git commit -m "Published by CircleCI $CIRCLE_BUILD_URL"
-git push origin "$GITHUB_PAGES_BRANCH"
+ls ~/.ssh
+GIT_SSH_COMMAND="ssh -v" git push origin "$GITHUB_PAGES_BRANCH"
